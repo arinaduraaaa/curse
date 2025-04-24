@@ -1,0 +1,76 @@
+/* Home.css */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Georgia', serif;
+}
+
+.home-page {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.full-width-container {
+  width: 100%;
+  position: relative;
+}
+
+.gallery-row {
+  display: flex;
+  width: 100%;
+}
+
+.edge-touching-image {
+  width: 33.333%;
+  height: 70vh;
+  object-fit: cover;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.centered-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+}
+
+.centered-text h1 {
+  color: white;
+  font-size: clamp(2rem, 6vw, 4rem);
+  font-weight: 300;
+  letter-spacing: 1px;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 90%;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+}
+
+.subtitle {
+  color: white;
+  font-size: clamp(1rem, 3vw, 1.5rem);
+  margin-top: 20px;
+  font-style: italic;
+  text-shadow: 0 1px 5px rgba(0, 0, 0, 0.8);
+}
+
+@media (max-width: 768px) {
+  .gallery-row {
+    flex-direction: column;
+  }
+  
+  .edge-touching-image {
+    width: 100%;
+    height: 40vh;
+  }
+  
+  .centered-text h1 {
+    padding: 15px;
+    font-size: 1.8rem;
+  }
+}

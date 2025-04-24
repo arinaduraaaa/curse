@@ -1,0 +1,126 @@
+.contacts-page {
+    padding: 20px;
+  }
+  
+  .contact-info {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .contact-info li {
+    margin-bottom: 10px;
+  }
+
+  .contacts-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  .contacts-content {
+    margin-bottom: 3rem;
+  }
+  
+  .subtitle {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 2rem;
+  }
+  
+  .contact-details {
+    display: flex;
+    gap: 3rem;
+    margin-bottom: 2rem;
+  }
+  
+  .contact-info {
+    flex: 1;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .contact-info li {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  .contact-icon {
+    margin-right: 1rem;
+    font-size: 1.3rem;
+  }
+  
+  .contact-form-section {
+    flex: 1;
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .contact-form h3 {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .contact-form textarea {
+    height: 150px;
+    resize: vertical;
+  }
+  
+  .contact-form button {
+    background-color: #a07d1e;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .contact-form button:hover {
+    background-color: #5e440d;
+  }
+  
+  .office-photo-section {
+    margin-top: 3rem;
+    text-align: center;
+  }
+  
+  .office-photo {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  .photo-caption {
+    margin-top: 1rem;
+    font-style: italic;
+    color: #666;
+  }
+  
+  @media (max-width: 768px) {
+    .contact-details {
+      flex-direction: column;
+    }
+    
+    .office-photo {
+      max-height: 300px;
+    }
+  }
